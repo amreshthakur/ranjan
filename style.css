@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 50px;
+    height: 50px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #02d9fa;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: chartreuse;
+}
+
+button {
+    width: 200px;
+    height: 50Px;
+    cursor: pointer;
+    padding: 1px;
+    box-shadow: -7px 7px rgb(15, 7, 7);
+    transform: rotate(0deg);
+    color: #080808;
+    border-width: 10px;
+    border-color: yellow;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+
+button:hover {
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 254, 55);
+    color: #080808;
+
+}
+
+.shake-button {
+    background-color: #f0f0f0;
+}
+
+.shake-button:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    60% {
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* <!-- End Of Header Section-->
+  <!-- Start Of About Section--> */
+#about {
+    padding: 20px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    padding: 0px 0px 0px 15px;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    padding: 15px 15px 15px 15px;
+
+}
+
+.about-col-2-h1 {
+    color: #fff;
+    padding: 15px 15px 15px 150px;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+.about-col-2 p {
+    color: #888888;
+    font-size: 20px;
+    flex-basis: 70%;
+
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    color: #fff;
+
+}
+
+.tab-links {
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #09f845;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*========-- End Of About Section-- */
+
+.container-3 h2 {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-3 p {
+    font-size: 15px;
+    font-style: inherit;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+.block {
+    width: 15%;
+    height: 120Px;
+    background-color: #02d9fa;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .block {
+    align-items: center;
+    width: 15%;
+    height: 120px;
+    background-color: blue;
+    display: flex;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px 20px 30px 20px;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* @media (min-width: 768px) {
+    .block {
+        width: 15%;
+        height: 120px;
+        font-size: 15px;
+    }
+} */
+
+/* -- End Of Service Section-- */

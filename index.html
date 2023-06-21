@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Start Of Header Section-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.jpg" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact_us">Portfolio</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- end of nav -->
+            <div class="header-text">
+                <p>Full stack Developer</p>
+                <h1>I am <span>Ranjan Kapoor</span><br> From Nepal.</h1>
+                <button class="shake-button" href=""><span>See My Works!</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Header Section-->
+    <!-- Start Of About Section-->
+    <section id="about">
+        <div class="container-2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about-1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-col-2-h1">About Me</h1>
+                    <p class="about-col-2-p">I am Ranjan Kapoor, a B.Sc.CSIT graduate, simple, creative enthusiastic and
+                        fun loving person I love to create something new and innovative i can handle HTML,CSS3,
+                        Javascript, nodejs,reactjs and mongodb in effecient way to create a full stack project</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Complete Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer </span> <br> Frontend & Backend </li>
+                            <li><span>Trader </span> <br> Option Buyer</li>
+                            <li><span>Android Development </span> <br> Mostly games UI </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>B.Sc CSIT </span> <br>RRM Campus Janakpurdham</li>
+                            <li><span>I.SC. </span> <br> Rajarshi Janak campus Janakpurdham</li>
+                            <li><span>SLC(10) </span> <br> Shree Secondary School <br> Parsa Pataili </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Sc CSIT </span> <br>RRM Campus Janakpurdham</li>
+                            <li><span>I.SC. </span> <br> Rajarshi Janak campus Janakpurdham</li>
+                            <li><span>SLC(10) </span> <br> Shree Secondary School <br> Parsa Pataili </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Csit Tutor</span> <br> For 1 Month</li>
+                            <li><span>Trader </span> <br> For 4 years</li>
+                            <li><span>Android Development </span> <br> For 1 years </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Start Of Service Section-->
+    <section id="service">
+        <div class="container-3">
+            <h2>Our Services</h2>
+            <p>I am a full stack developer with experience in web development, mobile application and desktop
+                applications.</p>
+
+
+
+
+                
+        </div>
+
+    </section>
+    <!-- End Of Service Section-->
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
