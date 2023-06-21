@@ -82,9 +82,9 @@ nav ul li a:hover::after {
 
 button {
     width: 200px;
-    height: 50Px;
+    height: 80Px;
     cursor: pointer;
-    padding: 1px;
+    padding: 0px;
     box-shadow: -7px 7px rgb(15, 7, 7);
     transform: rotate(0deg);
     color: #080808;
@@ -92,6 +92,7 @@ button {
     border-color: yellow;
     border-radius: 15px;
     font-weight: bold;
+    font-size: 20px;
 
 }
 
@@ -171,7 +172,7 @@ button:hover {
 .about-col-2-h1 {
     color: #fff;
     padding: 15px 15px 15px 150px;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 25px;
 
 }
@@ -191,7 +192,7 @@ button:hover {
 }
 
 .tab-links {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -233,57 +234,56 @@ button:hover {
     display: block;
 }
 
+#experience{
+    margin: 0px 0px 0px 200px;
+}
+#education{
+    margin: 0px 0px 0px 400px;
+}
+#Projects{
+    margin: 0px 0px 0px 630px;
+}
 /*========-- End Of About Section-- */
 
-.container-3 h2 {
+.container-3 h1 {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 5px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.container-3 p {
-    font-size: 15px;
-    font-style: inherit;
+.container-3 h4 {
+    font-size: 20px;
     padding-bottom: 5px;
     text-align: center;
 }
 
 
-.block {
-    width: 15%;
-    height: 120Px;
-    background-color: #02d9fa;
-    display: flex;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#service{
+    padding: 30px 0;
+ 
+}
+.service-list{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 0px 50px 0px 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.service-list h2{
+    color:#fff;
+    font-size: 30px;
+    display: block;
+    width: fit-content;
 
 }
 
-/* .block {
-    align-items: center;
-    width: 15%;
-    height: 120px;
-    background-color: blue;
-    display: flex;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 15px;
-    margin: 20px 20px 30px 20px;
-  justify-content: center;
-  align-items: center;
-} */
 
-/* @media (min-width: 768px) {
-    .block {
-        width: 15%;
-        height: 120px;
-        font-size: 15px;
-    }
-} */
 
 /* -- End Of Service Section-- */
