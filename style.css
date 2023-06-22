@@ -211,6 +211,11 @@ button:hover {
     transition: 0.5s;
 
 }
+.tab-links:hover{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .tab-links.active-link::after {
     width: 50%;
@@ -244,12 +249,14 @@ button:hover {
     margin: 0px 0px 0px 630px;
 }
 /*========-- End Of About Section-- */
+/* -- Start Of Service Section-- */
+
 
 .container-3 h1 {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 5px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -274,16 +281,53 @@ button:hover {
     margin-top: 50px;
     padding: 0px 50px 0px 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ 
+  
+}
+.service-list div{
+    background: #606060;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 30px;
+    transition: background 0.5s, transform 0.5s;
     
 }
-.service-list h2{
-    color:#fff;
-    font-size: 30px;
-    display: block;
-    width: fit-content;
-
+.service-list div:hover{
+    background:#ff004f;
+    transform: translateY(-10px);
+    
 }
+.service-list div h2{
+    color:#1aff00;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-
-
+    
+}
+.service-list div a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    background: #000000;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+.service-list div a:hover{
+    color: #000000;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
 /* -- End Of Service Section-- */
+/* ----------portfolio------------ */
+#portfolio{
+    padding: 10px 0;
+}
